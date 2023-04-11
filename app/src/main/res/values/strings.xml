@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Mirza Ghalib College</string>
+
+    <string name="bold" tools:ignore="ReferenceType">@font/font_bold</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/font_regular</string>
+    <string name="light" tools:ignore="ReferenceType">@font/font_light</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="notice">Notice</string>
+    <string name="faculty">Faculty</string>
+    <string name="gallery">Gallery</string>
+    <string name="about">About</string>
+
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="developer">Developer</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="website">Website</string>
+    <string name="theme">Theme</string>
+    <string name="pdf">Pdf</string>
+</resources>
