@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "516820631225",
+    "firebase_url": "https://mirza-ghalib-college-default-rtdb.firebaseio.com",
+    "project_id": "mirza-ghalib-college",
+    "storage_bucket": "mirza-ghalib-college.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516820631225:android:73c577eae0ec1c395ce568",
+        "android_client_info": {
+          "package_name": "com.tech.mirzaghalibcollege"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516820631225-ej4q0el6k4dho8a3g1e0vpnv99chtbof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.mirzaghalibcollege",
+            "certificate_hash": "09cbe5d48847bba99616ae074e060b05b2ef599f"
+          }
+        },
+        {
+          "client_id": "516820631225-ufggc0ibst13bur60dna18vmpa3ja0kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCthTHGihJsJImcxb02sIN0xaDExdThFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516820631225-ufggc0ibst13bur60dna18vmpa3ja0kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516820631225:android:6cba85003d05f3c45ce568",
+        "android_client_info": {
+          "package_name": "com.tech.mirzaghalibcollegeuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516820631225-li6jqert5gqhen0md7p7kemprfh4smt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.mirzaghalibcollegeuser",
+            "certificate_hash": "09cbe5d48847bba99616ae074e060b05b2ef599f"
+          }
+        },
+        {
+          "client_id": "516820631225-ufggc0ibst13bur60dna18vmpa3ja0kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCthTHGihJsJImcxb02sIN0xaDExdThFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516820631225-ufggc0ibst13bur60dna18vmpa3ja0kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

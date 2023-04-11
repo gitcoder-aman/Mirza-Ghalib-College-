@@ -1,9 +1,12 @@
 package com.tech.mirzaghalibcollegeuser
 
+import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -11,6 +14,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import com.tech.mirzaghalibcollegeuser.utils.util
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -38,6 +42,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         navigationView.setNavigationItemSelectedListener(this)
+    }
+    @RequiresApi(Build.VERSION_CODES.M)
+    override fun onResume() {
+        val isNetwork = util.isNetworkAvailable(applicationContext)
+
+        if(!isNetwork){
+            startActivity(Intent(this,NoInternetActivity::class.java))
+            finish()
+        }
+        super.onResume()
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
