@@ -5,10 +5,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import androidx.annotation.RequiresApi
-
-
-
-val hashMap: HashMap<String, String> = HashMap()
+import java.sql.Timestamp
 
 class util {
 
@@ -27,6 +24,12 @@ class util {
                 activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
                 else -> false
             }
+        }
+
+        fun setTimeStamp(currentMillis:Long): String {
+
+            val timeStamp = Timestamp(currentMillis)
+            return timeStamp.toString()
         }
 
     }

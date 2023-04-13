@@ -5,10 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.notice.NoticeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawablePadding="10dp"
+            android:background="@drawable/textbox"
+            android:drawableStart="@drawable/ic_search"
+            android:inputType="textPersonName"
+            android:hint="@string/search_for_notice" />
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noticeRecycler"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </FrameLayout>

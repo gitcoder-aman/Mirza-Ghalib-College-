@@ -54,6 +54,9 @@ class HomeFragment : Fragment() {
             navController.popBackStack(navController.graph.startDestinationId, true)
             navController.navigate(com.tech.mirzaghalibcollegeuser.R.id.navigation_notice)
         }
+        binding.cardActivity.setOnClickListener {
+            findNavController().navigate(com.tech.mirzaghalibcollegeuser.R.id.navigation_activity)
+        }
 
         return binding.root
     }
@@ -87,7 +90,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setSliderImage(path:String) {
-        imageSliderList.sortWith(SortByDate())
+        imageSliderList.sortWith(SortByDate())  //sort slider image in date wise
 
         val imageList = ArrayList<SlideModel>() // Create image list
 

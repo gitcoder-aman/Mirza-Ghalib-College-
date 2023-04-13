@@ -20,10 +20,10 @@
         android:label="Faculty"
         tools:layout="@layout/fragment_faculty"/>
 
-    <fragment android:id="@+id/navigation_gallery"
-        android:name="com.tech.mirzaghalibcollegeuser.ui.gallery.GalleryFragment"
+    <fragment android:id="@+id/navigation_activity"
+        android:name="com.tech.mirzaghalibcollegeuser.ui.activity.ActivityFragment"
         android:label="Gallery"
-        tools:layout="@layout/fragment_gallery"/>
+        tools:layout="@layout/fragment_activity"/>
 
     <fragment android:id="@+id/navigation_about"
         android:name="com.tech.mirzaghalibcollegeuser.ui.about.AboutFragment"

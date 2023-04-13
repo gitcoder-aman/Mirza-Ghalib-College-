@@ -3,6 +3,7 @@ package com.tech.mirzaghalibcollegeuser.model
 class ImageSliderModel {
     private var timeStamp:Long ?=null  //for sorting
     private var title:String?=null
+    private var category:String?=null  //for activity gallery
     private var image:String ?= null
     private var key:String ?= null
 
@@ -12,6 +13,10 @@ class ImageSliderModel {
         this.timeStamp = timeStamp
         this.image = image
         this.key = key
+    }
+    constructor(category:String, image: String?) {
+        this.category = category
+        this.image = image
     }
     fun setTimeStamp(timeStamp: Long?){
         this.timeStamp = timeStamp
@@ -36,5 +41,11 @@ class ImageSliderModel {
     }
     fun getTitle():String?{
         return title
+    }
+    fun setCategory(category: String?){
+        this.category = category
+    }
+    fun getCategory():String?{
+        return category
     }
 }

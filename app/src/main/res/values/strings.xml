@@ -28,4 +28,6 @@
     <string name="activity">Activity</string>
     <string name="feedback">Feedback</string>
     <string name="admission">Admission</string>
+    <string name="search">Search</string>
+    <string name="search_for_notice">Search for Notice</string>
 </resources>

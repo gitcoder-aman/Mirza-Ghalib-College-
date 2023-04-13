@@ -13,8 +13,8 @@
         android:title="@string/faculty"
         android:icon="@drawable/group"/>
 
-    <item android:id="@+id/navigation_gallery"
-        android:title="@string/gallery"
+    <item android:id="@+id/navigation_activity"
+        android:title="@string/activity"
         android:icon="@drawable/gallery"/>
 
     <item android:id="@+id/navigation_about"
