@@ -12,50 +12,48 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.tech.mirzaghalibcollegeuser.GalleryImageActivity
+import com.tech.mirzaghalibcollegeuser.ImageViewActivity
 import com.tech.mirzaghalibcollegeuser.R
 import com.tech.mirzaghalibcollegeuser.model.ImageSliderModel
 
-class ActivityAdapter(
+class GalleryAdapter(
     private val context: Context,
-    private var activityList: ArrayList<ImageSliderModel>?
-) : RecyclerView.Adapter<ActivityAdapter.ViewHolder>() {
+    private var galleryList: ArrayList<ImageSliderModel>?
+) : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(context).inflate(R.layout.activity_item_layout, parent, false)
+            LayoutInflater.from(context).inflate(R.layout.gallery_item_layout, parent, false)
         return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return activityList?.size!!
+        return galleryList?.size!!
     }
 
     @SuppressLint("ResourceType", "SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val activityModel = activityList?.get(position)
+        val galleryModel = galleryList?.get(position)
 
-        holder.activityTitle?.text = activityModel?.getCategory()
-
-        Picasso.get().load(activityModel?.getImage())
+        Picasso.get().load(galleryModel?.getImage())
             .placeholder(R.drawable.ic_no_image)
-            .into(holder.thumbnail_image)
+            .into(holder.image)
 
         holder.itemView.setOnClickListener {
-            val intent: Intent = Intent(context, GalleryImageActivity::class.java)
-            intent.putExtra("activityName",activityModel?.getCategory())
+            val intent = Intent(context,ImageViewActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            intent.putExtra("imageUrl",galleryModel?.getImage())
+            intent.putExtra("activityName",galleryModel?.getCategory())
             context.startActivity(intent)
         }
-
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var activityTitle: TextView? = null
-        var thumbnail_image: ImageView? = null
+        var image: ImageView? = null
 
         init {
-            activityTitle = itemView.findViewById(R.id.activityTitle)
-            thumbnail_image = itemView.findViewById(R.id.thumbnail_image)
+            image = itemView.findViewById(R.id.imageView)
         }
     }
 }

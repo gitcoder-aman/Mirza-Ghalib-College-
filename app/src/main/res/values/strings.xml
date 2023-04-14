@@ -30,4 +30,6 @@
     <string name="admission">Admission</string>
     <string name="search">Search</string>
     <string name="search_for_notice">Search for Notice</string>
+    <string name="developed_by_n_aman_kumar">Developed By:\n Aman Kumar</string>
+
 </resources>
