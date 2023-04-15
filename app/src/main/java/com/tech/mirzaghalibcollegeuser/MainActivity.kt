@@ -98,4 +98,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         metrics.scaledDensity = configuration.fontScale * metrics.density
         baseContext.resources.updateConfiguration(configuration, metrics)
     }
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        val a = Intent(Intent.ACTION_MAIN)
+        a.addCategory(Intent.CATEGORY_HOME)
+        a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(a)
+    }
 }

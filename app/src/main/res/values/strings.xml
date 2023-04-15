@@ -31,5 +31,13 @@
     <string name="search">Search</string>
     <string name="search_for_notice">Search for Notice</string>
     <string name="developed_by_n_aman_kumar">Developed By:\n Aman Kumar</string>
+    <string name="name">Name</string>
+    <string name="designation">Designation</string>
+    <string name="email">Email</string>
+    <string name="cv">CV</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="full_address">Full Address</string>
+    <string name="specialization_in_teaching">Specialization in teaching</string>
+    <string name="qualification">Qualification</string>
 
 </resources>

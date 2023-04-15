@@ -105,9 +105,5 @@ class NoticeFragment : Fragment() {
             Log.d("@@@@",o2?.getTimestamp().toString())
             return ((o2?.getTimestamp())?.minus(o1?.getTimestamp()!!))?.toInt()!!
         }
-
     }
-
-
-
 }

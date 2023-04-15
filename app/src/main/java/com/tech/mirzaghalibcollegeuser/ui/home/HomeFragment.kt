@@ -2,6 +2,7 @@ package com.tech.mirzaghalibcollegeuser.ui.home
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -17,6 +18,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.google.firebase.database.*
+import com.tech.mirzaghalibcollegeuser.DepartmentShowActivity
 import com.tech.mirzaghalibcollegeuser.databinding.FragmentHomeBinding
 import com.tech.mirzaghalibcollegeuser.model.ImageSliderModel
 import com.tech.mirzaghalibcollegeuser.ui.notice.NoticeFragment
@@ -56,6 +58,9 @@ class HomeFragment : Fragment() {
         }
         binding.cardActivity.setOnClickListener {
             findNavController().navigate(com.tech.mirzaghalibcollegeuser.R.id.navigation_activity)
+        }
+        binding.cardDepartment.setOnClickListener {
+            startActivity(Intent(activity, DepartmentShowActivity::class.java))
         }
 
         return binding.root
