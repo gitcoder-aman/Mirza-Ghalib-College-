@@ -19,6 +19,9 @@ import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.google.firebase.database.*
 import com.tech.mirzaghalibcollegeuser.DepartmentShowActivity
+import com.tech.mirzaghalibcollegeuser.FeedbackActivity
+import com.tech.mirzaghalibcollegeuser.R
+import com.tech.mirzaghalibcollegeuser.WebViewActivity
 import com.tech.mirzaghalibcollegeuser.databinding.FragmentHomeBinding
 import com.tech.mirzaghalibcollegeuser.model.ImageSliderModel
 import com.tech.mirzaghalibcollegeuser.ui.notice.NoticeFragment
@@ -52,15 +55,23 @@ class HomeFragment : Fragment() {
         binding.cardNotice.setOnClickListener{
 
             //change to fragment in navigation
-            val navController = findNavController()
-            navController.popBackStack(navController.graph.startDestinationId, true)
-            navController.navigate(com.tech.mirzaghalibcollegeuser.R.id.navigation_notice)
+            findNavController().navigate(R.id.navigation_notice)
         }
         binding.cardActivity.setOnClickListener {
-            findNavController().navigate(com.tech.mirzaghalibcollegeuser.R.id.navigation_activity)
+            val navController = findNavController()
+//            navController.popBackStack(navController.graph.startDestinationId, true)
+            findNavController().navigate(R.id.navigation_activity)
         }
         binding.cardDepartment.setOnClickListener {
             startActivity(Intent(activity, DepartmentShowActivity::class.java))
+        }
+        binding.cardAdmission.setOnClickListener {
+            val intent = Intent(activity,WebViewActivity::class.java)
+            intent.putExtra("link",resources.getString(R.string.admission_link))
+            activity?.startActivity(intent)
+        }
+        binding.cardFeedback.setOnClickListener {
+            startActivity(Intent(activity, FeedbackActivity::class.java))
         }
 
         return binding.root

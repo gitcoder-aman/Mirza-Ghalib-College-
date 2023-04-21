@@ -5,6 +5,7 @@ import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.firebase.database.*
 import com.tech.mirzaghalibcollegeuser.adapter.DepartmentAdapter
@@ -66,6 +67,16 @@ class DepartmentShowActivity : AppCompatActivity() {
                 Log.d("@@@@","OnCancelled")
             }
         })
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        val id = item.itemId
+
+        if (id == android.R.id.home) { // Check if the clicked item is the toolbar back button
+            onBackPressed() // Call the onBackPressed() method to handle the back button click
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }

@@ -14,6 +14,7 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }, 2000)
     }
 }

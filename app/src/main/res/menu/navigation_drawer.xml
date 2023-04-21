@@ -5,10 +5,6 @@
         android:title="@string/pdf"
         android:icon="@drawable/ebook"/>
 
-    <item android:id="@+id/navigation_theme"
-        android:title="@string/theme"
-        android:icon="@drawable/paint"/>
-
     <item android:id="@+id/navigation_website"
         android:title="@string/website"
         android:icon="@drawable/web"/>

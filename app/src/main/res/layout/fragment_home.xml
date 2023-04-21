@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.HomeFragment">
 
@@ -28,15 +29,32 @@
                 android:gravity="center"
                 android:fontFamily="@font/font_regular"/>
 
-            <com.denzcoskun.imageslider.ImageSlider
-                android:id="@+id/image_slider"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                app:iss_auto_cycle="true"
-                app:iss_period="1000"
-                app:iss_delay="1000"
-                app:iss_selected_dot="@drawable/selected_dot"
-                app:iss_text_align="CENTER"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_selected_dot="@drawable/selected_dot"
+                    app:iss_text_align="CENTER"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </com.google.android.material.card.MaterialCardView>
+
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -45,7 +63,7 @@
                 android:layout_margin="10dp"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:background="@color/yellow"
+                android:background="@drawable/textbox1"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -241,7 +259,7 @@
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cardFeedback"
-                    android:layout_width="130dp"
+                    android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_weight="1"
                     android:layout_margin="10dp"
@@ -282,16 +300,26 @@
 
         </LinearLayout>
 
-
-            <com.denzcoskun.imageslider.ImageSlider
-                android:id="@+id/vip_slider"
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                app:iss_auto_cycle="true"
-                app:iss_period="1000"
-                app:iss_delay="1000"
-                app:iss_selected_dot="@drawable/selected_dot"
-                app:iss_text_align="CENTER"/>
+                android:layout_height="@dimen/_200sdp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/vip_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="1000"
+                    app:iss_selected_dot="@drawable/selected_dot"
+                    app:iss_text_align="CENTER"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
 
         </LinearLayout>
 

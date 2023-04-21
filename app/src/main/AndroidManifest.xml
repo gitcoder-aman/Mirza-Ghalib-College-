@@ -8,13 +8,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MirzaGhalibCollegeUser"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
         <activity
             android:name=".DepartmentShowActivity"
             android:exported="false" />
@@ -39,7 +44,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustNothing"></activity>
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".NoInternetActivity"
             android:exported="true" />

@@ -40,4 +40,21 @@
     <string name="specialization_in_teaching">Specialization in teaching</string>
     <string name="qualification">Qualification</string>
 
+
+    <string name="admission_link">https://mirzaghalibcollegegaya.ac.in/?pg=all%20courses</string>
+    <string name="student_feedback_link">https://docs.google.com/forms/d/e/1FAIpQLSeVitKN4DEmbTtHOTisjxzYxdAP1eUR-UgDVXU6256THJc7uQ/viewform</string>
+    <string name="parent_feedback_link">https://docs.google.com/forms/d/e/1FAIpQLSe8cX04GEpql9rrJrUGRmgkebCcBuXXz3UL8V4RwqEyWSkzHA/viewform</string>
+    <string name="teacher_feedback_link">https://docs.google.com/forms/d/e/1FAIpQLSfR7sGjzzfrnwcdvsaCxTWugMKhcCUEZ_xd4mLJMA-317M9Hw/viewform</string>
+    <string name="alumni_feedback_link">https://docs.google.com/forms/d/e/1FAIpQLSf67iylN99o4mz4C34aVK7bFBvuIajIIDCsjiwktOm3xEdJsw/viewform</string>
+    <string name="valuable_feedback">Valuable Feedback</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="alumni">Alumni</string>
+    <string name="parent">Parent</string>
+    <string name="mirzaghalib_link">www.mirzaghalibcollegegaya.ac.in</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="instagram">Instagram</string>
+    <string name="insta_id">\@coder.aman</string>
+    <string name="linkedin_id">aman-kumar-4aaa631b5</string>
+
 </resources>

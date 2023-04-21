@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".FeedbackActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_font">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_bold"
+                    android:gravity="center"
+                    android:background="@drawable/textbox1"
+                    android:padding="5dp"
+                    android:layout_margin="8dp"
+                    android:text="@string/valuable_feedback"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/ic_person" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_bold"
+                                android:gravity="center"
+                                android:text="@string/student"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/studentFeedbackBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/textbox1"
+                                android:text="@string/feedback" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/ic_person" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_bold"
+                                android:gravity="center"
+                                android:text="@string/teacher"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/teacherFeedbackBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/textbox1"
+                                android:text="@string/feedback" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/ic_person" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_bold"
+                                android:gravity="center"
+                                android:text="@string/parent"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/parentFeedbackBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/textbox1"
+                                android:text="@string/feedback" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="start|center"
+                            android:src="@drawable/ic_person" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_bold"
+                                android:gravity="center"
+                                android:text="@string/alumni"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/alumniFeedbackBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/textbox1"
+                                android:text="@string/feedback" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
