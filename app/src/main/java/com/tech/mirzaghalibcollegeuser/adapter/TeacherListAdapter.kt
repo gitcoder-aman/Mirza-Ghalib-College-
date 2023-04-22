@@ -12,13 +12,19 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.tech.mirzaghalibcollegeuser.R
+import com.tech.mirzaghalibcollegeuser.model.NoticeModel
 import com.tech.mirzaghalibcollegeuser.model.TeacherModel
 
 
 class TeacherListAdapter(
     private val context: Context,
-    private val teacherList: ArrayList<TeacherModel>
+    private var teacherList: ArrayList<TeacherModel>
 ) : RecyclerView.Adapter<TeacherListAdapter.ViewHolder>() {
+
+    fun filteringForSearch(newFilteredList: ArrayList<TeacherModel>) {
+        teacherList = newFilteredList
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =

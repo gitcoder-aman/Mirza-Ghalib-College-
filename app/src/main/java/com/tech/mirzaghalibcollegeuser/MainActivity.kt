@@ -1,5 +1,6 @@
 package com.tech.mirzaghalibcollegeuser
 
+import android.annotation.SuppressLint
 import android.content.ComponentName
 import android.content.Intent
 import android.content.res.Configuration
@@ -62,6 +63,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onResume()
     }
 
+    @SuppressLint("QueryPermissionsNeeded")
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
@@ -117,7 +119,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 Toast.makeText(this,"Ebook",Toast.LENGTH_SHORT).show()
             }
             R.id.navigation_rate->{
-                Toast.makeText(this,"Rate the app",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Not listed on PlayStore.",Toast.LENGTH_SHORT).show()
             }
             R.id.navigation_share->{
                 Toast.makeText(this, "Share app with your friends", Toast.LENGTH_SHORT).show()
@@ -138,10 +140,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         if(toggle.onOptionsItemSelected(item)){
             return true
         }
-        return true
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.popup_menu, menu)
         return true
     }
     private fun adjustFontScale(configuration: Configuration) {

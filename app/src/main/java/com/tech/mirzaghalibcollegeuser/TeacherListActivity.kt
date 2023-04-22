@@ -28,7 +28,7 @@ class TeacherListActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
-        supportActionBar?.title = "Guest faculty"
+        supportActionBar?.title = "Faculty"
 
         dataReference = FirebaseDatabase.getInstance().reference.child("teachers")
         dialog = ProgressDialog(this)

@@ -14,14 +14,27 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="2dp"
+            android:background="@drawable/image_box">
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="fitXY"
-            android:padding="2dp"
-            android:background="@drawable/image_box"
-            android:layout_margin="8dp"
-            android:id="@+id/thumbnail_image"/>
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:id="@+id/thumbnail_image"/>
+
+        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
             <TextView
                 android:id="@+id/activityTitle"
