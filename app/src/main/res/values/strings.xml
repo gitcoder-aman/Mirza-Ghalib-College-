@@ -57,5 +57,13 @@
     <string name="insta_id">\@coder.aman</string>
     <string name="linkedin_id">aman-kumar-4aaa631b5</string>
     <string name="search_for_faculty">Search for faculty</string>
+    <string name="mirza_ghalib_college">Mirza Ghalib College</string>
+    <string name="history">History</string>
+    <string name="governing_body">Governing\nBody</string>
+    <string name="vision_amp_mission"><![CDATA[Vision & \nMission]]></string>
+    <string name="rule_and_regulations"><![CDATA[Rule &\n Regulations]]></string>
+    <string name="academic_calender">Academic\nCalender</string>
+    <string name="academic_holiday">Academic\nHoliday</string>
+    <string name="aman_kumar">Aman Kumar</string>
 
 </resources>

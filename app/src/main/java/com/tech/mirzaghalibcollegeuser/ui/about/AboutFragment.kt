@@ -6,15 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.tech.mirzaghalibcollegeuser.R
+import com.tech.mirzaghalibcollegeuser.databinding.FragmentAboutBinding
 
 class AboutFragment : Fragment() {
+
+    private lateinit var binding:FragmentAboutBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false)
+        binding = FragmentAboutBinding.inflate(layoutInflater, container, false)
+
+        return binding.root
     }
 
 }
